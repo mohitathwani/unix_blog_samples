@@ -2,7 +2,7 @@ link_directories(${GTKMM_LIBRARY_DIRS})
 include_directories(${GTKMM_INCLUDE_DIRS})
 
 add_executable(pomodoro main.cpp 
-    MainWindow.cpp)
+    MainWindow.cpp MainGrid.cpp)
 
 add_custom_command(
         TARGET pomodoro POST_BUILD
