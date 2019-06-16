@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/images">
+	  <file>tomato.png</file>
+  </gresource>
+  <gresource prefix="/stylesheets">
+  <file>MainWindow.css</file>
+  </gresource>
+
+</gresources>
