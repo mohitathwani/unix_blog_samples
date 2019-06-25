@@ -5,7 +5,7 @@ add_executable(pomodoro main.cpp
     MainWindow.cpp MainGrid.cpp ClockView.cpp resources.c)
 
 add_custom_command(
-        TARGET pomodoro PRE_BUILD
+        OUTPUT ${CMAKE_SOURCE_DIR}/src/resources.c
         COMMAND glib-compile-resources 
                 --sourcedir=${CMAKE_SOURCE_DIR}/resources/ 
                 --target=${CMAKE_SOURCE_DIR}/src/resources.c 
