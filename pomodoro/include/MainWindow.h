@@ -5,6 +5,7 @@
 #include <gtkmm/cssprovider.h>
 
 #include "MainGrid.h"
+#include "ClockView.h"
 
 class MainWindow: public Gtk::Window {
     public:
@@ -15,6 +16,7 @@ class MainWindow: public Gtk::Window {
 
     private:
     MainGrid m_main_grid;
+    ClockView m_clock_view;
     
     Glib::RefPtr<Gtk::CssProvider> m_css_provider;
     Glib::RefPtr<Gdk::Screen> m_screen;
