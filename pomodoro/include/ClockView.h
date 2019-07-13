@@ -11,5 +11,6 @@ protected:
 bool on_draw(const Cairo::RefPtr<Cairo::Context>& context) override;
 
 Glib::RefPtr<Gdk::Pixbuf> m_image;
+
 };
 #endif
