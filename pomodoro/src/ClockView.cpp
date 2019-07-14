@@ -90,12 +90,10 @@ bool ClockView::on_draw(const Cairo::RefPtr<Cairo::Context> &cr)
     double x1 = (m_radius - inset) * cos (i * M_PI / 6);
     double y1 = (m_radius - inset ) * sin (i * M_PI / 6);
 
-    std::cout << i << ":(" << x1 << "," << y1 << ")"<< std::endl;
     cr->move_to(x1, y1);
 
     double x2 = m_radius * cos (i * M_PI / 6);
     double y2 = m_radius * sin (i * M_PI / 6);
-    std::cout << i << ":(" << x2 << "," << y2 << ")"<< std::endl;
     cr->line_to (x2, y2);
 
     cr->stroke();
