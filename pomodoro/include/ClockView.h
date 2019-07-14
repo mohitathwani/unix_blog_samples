@@ -9,8 +9,11 @@ virtual ~ClockView();
 
 protected:
 bool on_draw(const Cairo::RefPtr<Cairo::Context>& context) override;
+bool on_timeout();
 
 Glib::RefPtr<Gdk::Pixbuf> m_image;
+double m_radius;
+double m_line_width;
 
 };
 #endif
